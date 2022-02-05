@@ -65,7 +65,7 @@ class ReminderPlugin(commands.Cog):
         for g in [g for g in self.data.values() if time.time() >= float(g["end"])]:
 
             embed = discord.Embed(description="**Reminder:**\r\r`{}`".format(g["description"]),
-                                  colour=discord.Colour.green())
+                                  colour=self.bot.main_color)
             embed.add_field(name="Message:", value="[Click here]({})".format(g["reference"]))
 
             embed.set_footer(text="Reminder ID: {}".format(g["id"]))
