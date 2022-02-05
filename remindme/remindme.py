@@ -54,7 +54,7 @@ class ReminderPlugin(commands.Cog):
     @commands.command()
     async def reminddelay(self, ctx):
         """
-        delay a reminder.
+        shows reminders max delay time.
         """
                                            
                                            
