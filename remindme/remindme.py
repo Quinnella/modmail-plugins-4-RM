@@ -16,7 +16,7 @@ def get_id():
 
 class ReminderPlugin(commands.Cog):
     """
-    Reminders
+    Set Reminders
     """
     
     
